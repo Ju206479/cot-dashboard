@@ -7,7 +7,7 @@ import { Redis } from "@upstash/redis";
 const redis = Redis.fromEnv();
 
 const SOURCES = [
-  { url: "https://www.cftc.gov/dea/futures/deacmesf.htm", codes: ["099741", "232741", "096742", "112741"] },
+  { url: "https://www.cftc.gov/dea/futures/deacmesf.htm", codes: ["099741", "232741", "096742", "112741", "13874A", "133741"] },
   { url: "https://www.cftc.gov/dea/futures/deanybtsf.htm", codes: ["098662"] },
 ];
 
@@ -17,6 +17,8 @@ const CODE_LABEL = {
   "096742": "GBP",
   "112741": "NZD",
   "098662": "USD",
+  "13874A": "S&P500",
+  "133741": "BTC",
 };
 
 function parseBlock(html, targetCode) {
