@@ -6,6 +6,8 @@ const INSTRUMENTS = [
   { label: "AUD", code: "232741" },
   { label: "NZD", code: "112741" },
   { label: "USD", code: "098662" },
+  { label: "S&P 500", code: "13874A" },
+  { label: "BTC", code: "133741" },
 ];
 
 function formatNum(n) {
